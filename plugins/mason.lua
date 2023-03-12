@@ -6,6 +6,20 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       -- ensure_installed = { "lua_ls" },
+      ensure_installed = {
+        -- > LSP
+        "awk_ls",
+        "bashls",
+        -- "codeqlls",
+        "dockerls",
+        "eslint",
+        "lua_ls", -- "sumneko_lua",  -- FIXME: Not recognized?
+        "pylsp",
+        -- "pyright", -- Too much noise
+        -- "sourcery",
+        "terraformls",
+        "tflint",
+      },
     },
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
@@ -14,6 +28,28 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       -- ensure_installed = { "prettier", "stylua" },
+      -- > Diagnostics
+      "actionlint",
+      "codespell",
+      "flake8",
+      "jsonlint",
+      "luacheck",
+      "markdownlint",
+      "proselint",
+      "shellcheck",
+      "sqlfluff",
+      "tflint",
+      "yamllint",
+
+      -- > Formatters
+      -- "autopep8",
+      "beautysh",
+      -- "black",
+      "isort",
+      "markdownlint",
+      "prettier",
+      "shfmt",
+      "stylua",
     },
   },
   {

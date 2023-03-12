@@ -9,7 +9,7 @@ return {
     pin_plugins = nil, -- nil, true, false (nil will pin plugins on stable only)
     skip_prompts = false, -- skip prompts about breaking changes
     show_changelog = true, -- show the changelog after performing an update
-    auto_quit = false, -- automatically quit the current session after a successful update
+    auto_quit = true, -- automatically quit the current session after a successful update
     remotes = { -- easily add new remotes to track
       --   ["remote_name"] = "https://remote_url.come/repo.git", -- full remote url
       --   ["remote2"] = "github_user/repo", -- GitHub user/repo shortcut,
@@ -18,7 +18,8 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  -- colorscheme = "astrodark",
+  colorscheme = "nightfox",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -26,7 +27,48 @@ return {
     underline = true,
   },
 
+  -- See: https://astronvim.com/Recipes/advanced_lsp#custom-lsp-definition
   lsp = {
+    -- Add overrides for LSP server settings, the keys are the name of the server
+    config = {
+      -- example for addings schemas to yamlls
+      -- yamlls = { -- override table for require("lspconfig").yamlls.setup({...})
+      --   settings = {
+      --     yaml = {
+      --       schemas = {
+      --         ["http://json.schemastore.org/github-workflow"] = ".github/workflows/*.{yml,yaml}",
+      --         ["http://json.schemastore.org/github-action"] = ".github/action.{yml,yaml}",
+      --         ["http://json.schemastore.org/ansible-stable-2.9"] = "roles/tasks/*.{yml,yaml}",
+      --       },
+      --     },
+      --   },
+      -- },
+      python_lsp_server = {
+        settings = {
+          configurationSources = { "flake8" },
+          -- formatCommand = { "black" },
+          pylsp = {
+            plugins = {
+              autopep8 = { enabled = false },
+              black = { enabled = true },
+              flake8 = { enabled = false, ignore = { "E501" } },
+              isort = { enabled = false }, -- FYI: Use isort from Packer instead
+              mccabe = { enabled = false },
+              pycodestyle = { enabled = false },
+              pydocstyle = { enabled = false },
+              pyflakes = { enabled = false },
+              pylint = { enabled = false },
+              pyls_flake8 = { enabled = false },
+              pyls_mypy = { enabled = false },
+              rope_autoimport = { enabled = true },
+              rope_completion = { enabled = true },
+              ruff = { enabled = false },
+              yapf = { enabled = false },
+            },
+          },
+        },
+      },
+    },
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
