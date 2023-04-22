@@ -13,7 +13,7 @@ return {
         -- "codeqlls",
         "dockerls",
         "eslint",
-        "lua_ls", -- "sumneko_lua",  -- FIXME: Not recognized?
+        "lua_ls",
         "pylsp",
         -- "pyright", -- Too much noise
         -- "sourcery",
