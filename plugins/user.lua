@@ -54,20 +54,18 @@ return {
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
-    config = function()
-      require("lsp_signature").setup()
-    end,
+    config = function() require("lsp_signature").setup() end,
   },
   {
     "codota/tabnine-nvim",
     -- event = "BufRead",
     config = function()
-      require("tabnine").setup({
+      require("tabnine").setup {
         disable_auto_comment = true,
         accept_keymap = "<Tab>",
         debounce_ms = 300,
         suggestion_color = { gui = "#808080", cterm = 244 },
-      })
+      }
     end,
   },
 }

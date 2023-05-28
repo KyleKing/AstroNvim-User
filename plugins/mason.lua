@@ -29,29 +29,29 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
-      -- ensure_installed = { "prettier", "stylua" },
-      -- > Diagnostics
-      "actionlint",
-      "codespell",
-      "flake8",
-      "jsonlint",
-      "luacheck",
-      "markdownlint",
-      "proselint",
-      "shellcheck",
-      "sqlfluff",
-      "tflint",
-      "yamllint",
+        -- ensure_installed = { "prettier", "stylua" },
+        -- > Diagnostics
+        "actionlint",
+        "codespell",
+        "flake8",
+        "jsonlint",
+        "luacheck",
+        "markdownlint",
+        "proselint",
+        "shellcheck",
+        "sqlfluff",
+        "tflint",
+        "yamllint",
 
-      -- > Formatters
-      -- "autopep8",
-      "beautysh",
-      -- "black",
-      "isort",
-      "markdownlint",
-      "prettier",
-      "shfmt",
-      "stylua",
+        -- > Formatters
+        -- "autopep8",
+        "beautysh",
+        -- "black",
+        "isort",
+        "markdownlint",
+        "prettier",
+        "shfmt",
+        "stylua",
       })
     end,
   },

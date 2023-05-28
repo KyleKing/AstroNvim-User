@@ -20,7 +20,7 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   { import = "astrocommunity.editing-support.dial-nvim" },
-  { import = "astrocommunity.editing-support.mini-splitjoin" },  -- Or treej
+  { import = "astrocommunity.editing-support.mini-splitjoin" }, -- Or treej
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.indent.indent-blankline-nvim" },
   { import = "astrocommunity.indent.mini-indentscope" },

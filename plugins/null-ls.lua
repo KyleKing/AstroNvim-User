@@ -2,8 +2,8 @@ return {
   "jose-elias-alvarez/null-ls.nvim",
   opts = function(_, config)
     -- config variable is the default configuration table for the setup function call
-    local null_ls = require("null-ls")
-    null_ls.setup({ debug = true })
+    local null_ls = require "null-ls"
+    null_ls.setup { debug = true }
 
     -- Check supported formatters and linters
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
@@ -11,25 +11,25 @@ return {
     config.sources = {
       -- > Formatting
       null_ls.builtins.formatting.stylua,
-      null_ls.builtins.formatting.prettier.with({
-          prefer_local = "node_modules/.bin",
-      }),
-      null_ls.builtins.formatting.eslint.with({
-          prefer_local = "node_modules/.bin",
-      }),
+      null_ls.builtins.formatting.prettier.with {
+        prefer_local = "node_modules/.bin",
+      },
+      null_ls.builtins.formatting.eslint.with {
+        prefer_local = "node_modules/.bin",
+      },
       null_ls.builtins.formatting.taplo,
       null_ls.builtins.formatting.terraform_fmt,
       null_ls.builtins.formatting.trim_newlines,
       null_ls.builtins.formatting.trim_whitespace,
 
       -- > Diagnostics
-      null_ls.builtins.diagnostics.eslint.with({
+      null_ls.builtins.diagnostics.eslint.with {
         prefer_local = "node_modules/.bin",
-      }),
+      },
       -- FIXME: How are project configuration files recognized?
-      null_ls.builtins.diagnostics.flake8.with({
+      null_ls.builtins.diagnostics.flake8.with {
         only_local = true,
-      }),
+      },
       -- null_ls.builtins.diagnostics.pylint.with({
       --  only_local = true,
       -- }),
