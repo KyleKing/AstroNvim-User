@@ -16,7 +16,7 @@ return {
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.colorscheme.everforest" },
-  { import = "astrocommunity.colorscheme.nightfox" },
+  { import = "astrocommunity.colorscheme.nightfox-nvim" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   { import = "astrocommunity.editing-support.dial-nvim" },
