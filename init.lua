@@ -47,6 +47,27 @@ return {
       --     },
       --   },
       -- },
+      -- FIXME: Considering how to include schemastore?
+      -- yamlls = {
+      --   settings = {
+      --     yaml = {
+      --       schemaStore = {
+      --         -- You must disable built-in schemaStore support if you want to use
+      --         -- this plugin and its advanced options like `ignore`.
+      --         enable = false,
+      --       },
+      --       schemas = require('schemastore').yaml.schemas(),
+      --     },
+      --   },
+      -- },
+      -- jsonls = {
+      --   settings = {
+      --     json = {
+      --       schemas = require('schemastore').json.schemas(),
+      --       validate = { enable = true },
+      --     },
+      --   },
+      -- },
       python_lsp_server = {
         settings = {
           configurationSources = { "flake8" },
