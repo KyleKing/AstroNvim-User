@@ -24,6 +24,9 @@ return {
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
   {
+    -- Check supported formatters and linters
+    -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
+    -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
     "jay-babu/mason-null-ls.nvim",
     -- overrides `require("mason-null-ls").setup(...)`
     opts = function(_, opts)
@@ -36,8 +39,7 @@ return {
         "flake8",
         "jsonlint",
         "luacheck",
-        -- https://github.com/igorshubovych/markdownlint-cli
-        "markdownlint",
+        "markdownlint_cli2",
         -- https://github.com/amperser/proselint/blob/fe368030357a8300f383f9e906c08c73317d2021/tests/test_config_flag_proselintrc.json#L4
         "proselint",
         "shellcheck",
