@@ -56,42 +56,4 @@ return {
     event = "BufRead",
     config = function() require("lsp_signature").setup() end,
   },
-  -- {
-  --   -- Alpha plugin and doesn't seem to work, so using a 3rd party one instead
-  --   --  "codota/tabnine-nvim",
-  --   "tzachar/cmp-tabnine",
-  --   event = "UIEnter", -- Should be InsertEnter
-  --   build = "./install.sh",
-  --   -- dependencies = "hrsh7th/nvim-cmp",
-  --   -- https://github.com/tzachar/cmp-tabnine#setup
-  --   config = function()
-  --     local tabnine = require "cmp_tabnine.config"
-  --     tabnine:setup {
-  --       -- max_lines = 1000,
-  --       -- max_num_results = 20,
-  --       -- sort = true,
-  --       -- run_on_every_keystroke = true,
-  --       -- snippet_placeholder = "..",
-  --       show_prediction_strength = true,
-  --     }
-  --   end,
-  -- },
-  -- -- Add more sources from: https://astronvim.com/Recipes/cmp#add-more-sources
-  -- { -- override nvim-cmp plugin
-  --   "hrsh7th/nvim-cmp",
-  --   dependencies = {
-  --     "tzachar/cmp-tabnine", -- add cmp source as dependency of cmp
-  --   },
-  --   -- override the options table that is used in the `require("cmp").setup()` call
-  --   opts = function(_, opts)
-  --     -- opts parameter is the default options table
-  --     -- the function is lazy loaded so cmp is able to be required
-  --     local cmp = require "cmp"
-  --     -- modify the sources part of the options table
-  --     opts.sources = cmp.config.sources {
-  --       { name = "TabNine", priority = 1001 },
-  --     }
-  --     return opts
-  --   end,
-  -- },
 }
