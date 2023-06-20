@@ -26,12 +26,6 @@ return {
       null_ls.builtins.diagnostics.eslint.with {
         prefer_local = "node_modules/.bin",
       },
-      null_ls.builtins.diagnostics.markdownlint_cli2.with {
-        args = { "--config", "./../../../.markdownlint.jsonc" },
-        generator_opts = {
-          args = { "--config", "./../../../.markdownlint.jsonc" },
-        },
-      },
       -- FIXME: add a lua function that searches for the best configuration file recursively
       null_ls.builtins.diagnostics.flake8.with {
         only_local = true,

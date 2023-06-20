@@ -39,7 +39,6 @@ return {
         "flake8",
         "jsonlint",
         "luacheck",
-        "markdownlint_cli2",
         -- https://github.com/amperser/proselint/blob/fe368030357a8300f383f9e906c08c73317d2021/tests/test_config_flag_proselintrc.json#L4
         "proselint",
         "shellcheck",
