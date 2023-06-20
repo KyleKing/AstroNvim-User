@@ -36,7 +36,9 @@ return {
         "flake8",
         "jsonlint",
         "luacheck",
+        -- https://github.com/igorshubovych/markdownlint-cli
         "markdownlint",
+        -- https://github.com/amperser/proselint/blob/fe368030357a8300f383f9e906c08c73317d2021/tests/test_config_flag_proselintrc.json#L4
         "proselint",
         "shellcheck",
         "sqlfluff",
@@ -48,7 +50,6 @@ return {
         "beautysh",
         -- "black",
         "isort",
-        "markdownlint",
         "prettier",
         "shfmt",
         "stylua",

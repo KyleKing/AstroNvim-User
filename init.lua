@@ -1,3 +1,7 @@
+-- PLANNED: determine the formatter programmatically
+--  https://github.com/codota/tabnine-nvim#windows
+-- local function pick_python_formatter() return "black" end
+
 return {
   -- Configure AstroNvim updates
   updater = {
@@ -46,11 +50,11 @@ return {
       python_lsp_server = {
         settings = {
           configurationSources = { "flake8" },
-          -- formatCommand = { "black" },
+          -- formatCommand = { pick_python_formatter() },
           pylsp = {
             plugins = {
               autopep8 = { enabled = false },
-              black = { enabled = true },
+              black = { enabled = false },
               flake8 = { enabled = false, ignore = { "E501" } },
               isort = { enabled = false }, -- FYI: Use isort from Packer instead
               mccabe = { enabled = false },
@@ -62,7 +66,7 @@ return {
               pyls_mypy = { enabled = false },
               rope_autoimport = { enabled = true },
               rope_completion = { enabled = true },
-              ruff = { enabled = false },
+              ruff = { enabled = true },
               yapf = { enabled = false },
             },
           },
