@@ -26,6 +26,7 @@ return {
   -- { import = "astrocommunity.editing-support.mini-splitjoin" }, -- Or treej
   { import = "astrocommunity.editing-support.telescope-undo-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  { import = "astrocommunity.editing-support.yanky-nvim" },
   { import = "astrocommunity.indent.indent-blankline-nvim" },
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.motion.mini-surround" },
