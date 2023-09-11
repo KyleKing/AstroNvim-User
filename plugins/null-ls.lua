@@ -26,10 +26,10 @@ return {
       null_ls.builtins.diagnostics.eslint.with {
         prefer_local = "node_modules/.bin",
       },
-      -- FIXME: add a lua function that searches for the best configuration file recursively
-      null_ls.builtins.diagnostics.flake8.with {
-        only_local = true,
-      },
+      -- -- FIXME: add a lua function that searches for the best configuration file recursively
+      -- null_ls.builtins.diagnostics.flake8.with {
+      --   only_local = true,
+      -- },
       -- null_ls.builtins.diagnostics.pylint.with({
       --  only_local = true,
       -- }),

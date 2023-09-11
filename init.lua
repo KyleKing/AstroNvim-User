@@ -76,7 +76,7 @@ return {
             plugins = {
               autopep8 = { enabled = false },
               black = { enabled = false },
-              flake8 = { enabled = false, ignore = { "E501" } },
+              flake8 = { enabled = true },
               isort = { enabled = false }, -- FYI: Use isort from Packer instead
               mccabe = { enabled = false },
               pycodestyle = { enabled = false },
