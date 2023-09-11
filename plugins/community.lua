@@ -35,7 +35,7 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.markdown" },
-  { import = "astrocommunity.pack.python" },
+  -- { import = "astrocommunity.pack.python" }, -- FIXME: Might be the root cause of parsing Python files?
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.typescript" },
