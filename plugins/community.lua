@@ -13,7 +13,6 @@ return {
 
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
   -- { import = "astrocommunity.code-runner.executor-nvim" },
-  { import = "astrocommunity.color.vim-highlighter" },
   -- { import = "astrocommunity.colorscheme.catppuccin" }, -- Unused
   -- { import = "astrocommunity.colorscheme.everforest" }, -- Unused
   -- { import = "astrocommunity.colorscheme.melange-nvim" }, -- Unused. See WezTerm: https://github.com/savq/melange-nvim/blob/master/term/wezterm/melange_dark.toml
