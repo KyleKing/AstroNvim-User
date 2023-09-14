@@ -51,8 +51,4 @@ return {
     "sheerun/vim-polyglot",
     event = "UIEnter",
   },
-  {
-    "tzachar/local-highlight.nvim",
-    config = function() require("local-highlight").setup() end,
-  },
 }
