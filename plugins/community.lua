@@ -29,6 +29,7 @@ return {
   { import = "astrocommunity.editing-support.yanky-nvim" },
   { import = "astrocommunity.indent.indent-blankline-nvim" },
   { import = "astrocommunity.indent.mini-indentscope" },
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.docker" },

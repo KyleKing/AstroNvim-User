@@ -52,8 +52,7 @@ return {
     event = "UIEnter",
   },
   {
-    "ray-x/lsp_signature.nvim",
-    event = "BufRead",
-    config = function() require("lsp_signature").setup() end,
+    "tzachar/local-highlight.nvim",
+    config = function() require("local-highlight").setup() end,
   },
 }
