@@ -10,39 +10,12 @@ return {
   --   end,
   -- },
 
-  -- > Themes
+  -- > Themes (more in astrocommunity.lua)
   -- "dracula/vim",  -- dracula
-  -- {  - FYI: Moved to astrocommunity version
-  --   "EdenEast/nightfox.nvim", -- nightfox, duskfox
-  --   -- PLANNED: These settings weren't being recognized?
-  --   opts = {
-  --     dim_inactive = true,
-  --     styles = {
-  --       comments = "italic",
-  --       keywords = "bold",
-  --       types = "italic,bold",
-  --     },
-  --   },
-  -- },
   -- "folke/tokyonight.nvim",  -- tokyonight-storm
   -- "joshdick/onedark.vim",  -- onedark
   -- "rebelot/kanagawa.nvim",  -- kanagawa
   -- "roflolilolmao/oceanic-next.nvim",  -- OceanicNext
-  -- {
-  --   "sainnhe/everforest", -- everforest
-  --   -- PLANNED: Need to figure out how configuration works. No lua examples
-  --   -- config = function()
-  --   --  set background=dark
-  --   --  let g:everforest_background = 'soft'
-  --   -- end,
-  --   --  background = "dark",
-  --   --  everforest_background = "hard",
-  --   --  everforest_enable_italic = 1,
-  --   --  everforest_dim_inactive_windows = 1,
-  --   --  everforest_sign_column_background = "grey",
-  --   --  everforest_ui_contrast = "high",
-  --   -- better_performance = 1,
-  -- },
   -- "sickill/vim-monokai", -- monokai
   -- "sonph/onehalf", -- onehalfdark
 
@@ -50,5 +23,18 @@ return {
   {
     "sheerun/vim-polyglot",
     event = "UIEnter",
+  },
+  {
+    -- highlight t/T/f/F targets (https://github.com/unblevable/quick-scope)
+    "unblevable/quick-scope",
+    event = "User AstroFile",
+    init = function()
+      vim.g.qs_highlight_on_keys = { "f", "F", "t", "T" }
+      vim.g.qs_max_chars = 150
+    end,
+    config = function()
+      vim.api.nvim_set_hl(0, "QuickScopePrimary", { underline = true, fg = "#FFFFFF" })
+      vim.api.nvim_set_hl(0, "QuickScopeSecondary", { underline = true, fg = "#FFF000" })
+    end,
   },
 }
