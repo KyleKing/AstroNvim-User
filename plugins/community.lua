@@ -35,7 +35,6 @@ return {
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.marks-nvim" },
   { import = "astrocommunity.motion.mini-surround" },
-  { import = "astrocommunity.motion.nvim-spider" },
   { import = "astrocommunity.motion.vim-matchup" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.docker" },
@@ -52,7 +51,5 @@ return {
   { import = "astrocommunity.register.nvim-neoclip-lua" },
   { import = "astrocommunity.search.nvim-hlslens" },
   { import = "astrocommunity.syntax.hlargs-nvim" },
-  { import = "astrocommunity.terminal-integration.flatten-nvim" },
-  { import = "astrocommunity.workflow.bad-practices-nvim" },
   { import = "astrocommunity.workflow.hardtime-nvim" },
 }
