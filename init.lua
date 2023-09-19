@@ -23,6 +23,7 @@ return {
 
   -- Set colorscheme to use
   -- colorscheme = "astrodark",
+  -- colorscheme = "gruvbox",
   colorscheme = "nightfox",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
