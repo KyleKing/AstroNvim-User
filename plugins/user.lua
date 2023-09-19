@@ -37,4 +37,20 @@ return {
       vim.api.nvim_set_hl(0, "QuickScopeSecondary", { underline = true, fg = "#FFF000" })
     end,
   },
+  -- {
+  --   "nvim-telescope/telescope-smart-history.nvim",
+  --   dependencies = { "kkharji/sqlite.lua" },
+  --   event = "telescope.nvim",  -- FIXME: This event isn't recognized. Consider https://code.mehalter.com/AstroNvim_user/~files/91d8255ef1d901067621420b0e90e92f4ba8b0ee/plugins/telescope.lua
+  --   -- config = function()
+  --   --   require("telescope").setup {
+  --   --     defaults = {
+  --   --       history = {
+  --   --         path = "~/.local/share/nvim/databases/telescope_history.sqlite3",
+  --   --         limit = 100,
+  --   --       },
+  --   --     },
+  --   --   }
+  --   -- end,
+  --   opts = function() require("telescope").load_extension "smart_history" end,
+  -- },
 }
