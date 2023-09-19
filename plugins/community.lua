@@ -45,6 +45,7 @@ return {
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.file-explorer.mini-files" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.programming-language-support.csv-vim" },
   { import = "astrocommunity.project.nvim-spectre" },
