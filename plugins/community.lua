@@ -22,6 +22,7 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   -- { import = "astrocommunity.editing-support.dial-nvim" },
   -- { import = "astrocommunity.editing-support.mini-splitjoin" }, -- Or treej
+  { import = "astrocommunity.editing-support.nvim-devdocs" },
   { import = "astrocommunity.editing-support.telescope-undo-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.file-explorer.mini-files" },
