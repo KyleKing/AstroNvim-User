@@ -33,7 +33,7 @@ return {
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
   -- { import = "astrocommunity.motion.flash-nvim" },
   -- { import = "astrocommunity.motion.marks-nvim" },
-  { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.json" },
