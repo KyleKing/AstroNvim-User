@@ -5,17 +5,24 @@ return {
     opts = function(_, opts)
       -- customize the dashboard header
       opts.section.header.val = {
-        -- " █████  ███████ ████████ ██████   ██████",
-        -- "██   ██ ██         ██    ██   ██ ██    ██",
-        -- "███████ ███████    ██    ██████  ██    ██",
-        -- "██   ██      ██    ██    ██   ██ ██    ██",
-        -- "██   ██ ███████    ██    ██   ██  ██████",
-        " ",
-        "    ███    ██ ██    ██ ██ ███    ███",
-        "    ████   ██ ██    ██ ██ ████  ████",
-        "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-        "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-        "    ██   ████   ████   ██ ██      ██",
+        "  ⟋|､",
+        " (°､ ｡ 7",
+        " |､  ~ヽ",
+        " じしf_,)〳",
+      }
+
+      -- From: https://github.com/t1gu1/astrovim-config/blob/5153451e88ee3dbd795acdd64ebecbdc7ac96bac/plugins/core.lua#L19-L23
+      --  and: https://github.com/AstroNvim/AstroNvim/blob/271c9c3f71c2e315cb16c31276dec81ddca6a5a6/lua/plugins/alpha.lua#L22C5-L30
+      local button, get_icon = require("astronvim.utils").alpha_button, require("astronvim.utils").get_icon
+      opts.section.buttons.val = {
+        button("LDR f p", "  Open Project  "),
+        button("LDR s", "  Settings  "),
+        button("LDR n  ", get_icon("FileNew", 2, true) .. "New File  "),
+        button("LDR f f", get_icon("Search", 2, true) .. "Find File  "),
+        button("LDR f o", get_icon("DefaultFile", 2, true) .. "Recents  "),
+        button("LDR f w", get_icon("WordFile", 2, true) .. "Find Word  "),
+        button("LDR f '", get_icon("Bookmarks", 2, true) .. "Bookmarks  "),
+        button("LDR S l", get_icon("Refresh", 2, true) .. "Last Session  "),
       }
       return opts
     end,

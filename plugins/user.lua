@@ -25,6 +25,24 @@ return {
     event = "UIEnter",
   },
   {
+    "SidOfc/mkdx",
+    ft = { "markdown" },
+    -- Maybe: https://github.com/SidOfc/mkdx/issues/190#issuecomment-1632751392
+    -- config = function()
+    --   vim.g["mkdx#settings"] = {
+    --     highlight = { enable = 1 },
+    --     enter = { shift = 1 },
+    --     links = { external = { enable = 1 } },
+    --     toc = { text = "Table of Contents", update_on_write = 1 },
+    --     fold = { enable = 1 },
+    --     tokens = { strike = "~" },
+    --   }
+    --
+    --   -- Unset the gx mapping from mkdx so that we can correctly open URLs in the browser
+    --   vim.keymap.set("n", "<Plug>", "<Plug>(mkdx-gx)")
+    -- end,
+  },
+  {
     -- highlight t/T/f/F targets (https://github.com/unblevable/quick-scope)
     "unblevable/quick-scope",
     event = "User AstroFile",
