@@ -1,4 +1,10 @@
-# AstroNvim User Configuration Example
+**Archival Update**: I'm now using a custom setup: https://github.com/KyleKing/nvim
+
+---
+
+# AstroNvim User Configuration
+
+KyleKing/AstroNvim-User
 
 A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
